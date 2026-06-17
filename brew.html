@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Luckin Coffee — Brew Your Luck</title>
+  <link rel="stylesheet" href="./brew.css" />
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="logo">
+      <svg id="navDeer" width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path id="nd1" d="M6 9.5 Q12 0 18 9.5 Q12 19 6 9.5Z" fill="#0b1680"/>
+        <ellipse id="nd2" cx="12" cy="20.2" rx="3.4" ry="2.4" fill="#0b1680" opacity=".42"/>
+      </svg>
+      <span id="navTxt">luckin coffee</span>
+    </div>
+
+    <div class="nav-r">
+      <span id="navLang" class="nav-lang">EN ∨</span>
+      <div id="navRing" class="nav-ring"></div>
+    </div>
+  </nav>
+
+  <!-- S1: HERO -->
+  <section class="scr active" id="s1">
+    <div class="h-rings">
+      <div class="hr"></div>
+      <div class="hr"></div>
+      <div class="hr"></div>
+      <div class="hr"></div>
+      <div class="hr"></div>
+    </div>
+
+    <div class="clover-outer">
+      <div class="clover-float">
+        <svg viewBox="0 0 270 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gt" cx="36%" cy="24%" r="62%">
+              <stop offset="0%" stop-color="#cce0ff"/>
+              <stop offset="28%" stop-color="#88b4ff"/>
+              <stop offset="70%" stop-color="#2848d8"/>
+              <stop offset="100%" stop-color="#0e1ea8"/>
+            </radialGradient>
+            <radialGradient id="gb" cx="64%" cy="24%" r="62%">
+              <stop offset="0%" stop-color="#b8d2ff"/>
+              <stop offset="28%" stop-color="#78a4f8"/>
+              <stop offset="70%" stop-color="#2240cc"/>
+              <stop offset="100%" stop-color="#0c1898"/>
+            </radialGradient>
+            <radialGradient id="gl" cx="26%" cy="36%" r="62%">
+              <stop offset="0%" stop-color="#d4e6ff"/>
+              <stop offset="28%" stop-color="#94bcff"/>
+              <stop offset="70%" stop-color="#2a50da"/>
+              <stop offset="100%" stop-color="#1020a8"/>
+            </radialGradient>
+            <radialGradient id="gr" cx="74%" cy="36%" r="62%">
+              <stop offset="0%" stop-color="#cce0ff"/>
+              <stop offset="28%" stop-color="#88b4ff"/>
+              <stop offset="70%" stop-color="#2848d8"/>
+              <stop offset="100%" stop-color="#0e1ea8"/>
+            </radialGradient>
+            <radialGradient id="gc" cx="38%" cy="32%" r="68%">
+              <stop offset="0%" stop-color="#5878e0"/>
+              <stop offset="100%" stop-color="#08128a"/>
+            </radialGradient>
+            <radialGradient id="gs1" cx="30%" cy="20%" r="55%">
+              <stop offset="0%" stop-color="rgba(255,255,255,.62)"/>
+              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+            </radialGradient>
+            <radialGradient id="gr2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(80,120,230,.2)"/>
+              <stop offset="100%" stop-color="rgba(80,120,230,0)"/>
+            </radialGradient>
+            <filter id="fsft"><feGaussianBlur stdDeviation="2.5"/></filter>
+            <filter id="fsftr"><feGaussianBlur stdDeviation="4"/></filter>
+          </defs>
+
+          <ellipse cx="135" cy="280" rx="65" ry="17" fill="url(#gr2)"/>
+          <ellipse cx="135" cy="280" rx="42" ry="10" fill="rgba(80,130,220,.12)"/>
+          <ellipse cx="135" cy="280" rx="22" ry="5" fill="rgba(80,130,220,.09)"/>
+          <ellipse cx="135" cy="88" rx="46" ry="60" fill="url(#gt)"/>
+          <ellipse cx="135" cy="130" rx="40" ry="22" fill="rgba(8,18,140,.14)" filter="url(#fsft)"/>
+          <ellipse cx="118" cy="66" rx="16" ry="24" fill="url(#gs1)" filter="url(#fsft)"/>
+          <ellipse cx="135" cy="172" rx="46" ry="60" fill="url(#gb)"/>
+          <ellipse cx="118" cy="154" rx="20" ry="30" fill="url(#gs1)" opacity=".7" filter="url(#fsft)"/>
+          <ellipse cx="83" cy="130" rx="60" ry="43" fill="url(#gl)"/>
+          <ellipse cx="62" cy="115" rx="24" ry="16" fill="url(#gs1)" opacity=".75" filter="url(#fsft)"/>
+          <ellipse cx="187" cy="130" rx="60" ry="43" fill="url(#gr)"/>
+          <ellipse cx="172" cy="112" rx="16" ry="11" fill="url(#gs1)" opacity=".65" filter="url(#fsft)"/>
+          <circle cx="135" cy="130" r="40" fill="rgba(8,18,130,.1)" filter="url(#fsftr)"/>
+          <circle cx="135" cy="130" r="26" fill="url(#gc)"/>
+          <ellipse cx="126" cy="122" rx="8" ry="10" fill="rgba(255,255,255,.32)" filter="url(#fsft)"/>
+          <path d="M135 172 Q131 200 135 218" stroke="#0e1ea8" stroke-width="7.5" stroke-linecap="round" fill="none" opacity=".36"/>
+        </svg>
+      </div>
+      <div class="clover-shadow"></div>
+    </div>
+
+    <div class="h1-copy">
+      <h1>You're<br>missing<br>your luck.</h1>
+      <p class="h1-sub">Tap to brew it.</p>
+      <span class="h1-caret">∨</span>
+    </div>
+
+    <button class="brew-btn" id="tapBtn" type="button">Brew my luck ✦</button>
+  </section>
+
+  <!-- S2: BREWING -->
+  <section class="scr" id="s2">
+    <div class="eyebrow lt"><strong>02</strong>&nbsp;BREWING</div>
+    <canvas class="brew-cvs" id="brewCvs"></canvas>
+
+    <div class="brew-ui">
+      <div class="brew-deer">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none">
+          <path d="M6 9.5 Q12 0 18 9.5 Q12 19 6 9.5Z" fill="rgba(255,255,255,.88)"/>
+          <ellipse cx="12" cy="20.2" rx="3.4" ry="2.4" fill="rgba(255,255,255,.35)"/>
+        </svg>
+      </div>
+
+      <h2 class="brew-h2">Brewing<br>your luck...</h2>
+
+      <div class="brew-dots">
+        <div class="brew-dot"></div>
+        <div class="brew-dot"></div>
+        <div class="brew-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3: REVEAL -->
+  <section class="scr" id="s3">
+    <div class="eyebrow dk"><strong>03</strong>&nbsp;REVEAL</div>
+    <canvas class="reveal-cvs" id="revealCvs"></canvas>
+
+    <div class="reveal-layout">
+      <div class="r-label">
+        <div class="r-badge">LUCK<br>UNLOCKED</div>
+        <div class="r-desc">Something sweet<br>was waiting.</div>
+      </div>
+
+      <div class="card-scene">
+        <div class="g-card" id="gCard">
+          <div class="g-new">NEW</div>
+          <div class="sparks" id="sparksEl"></div>
+          <span class="g-icon" id="gIcon">🧋</span>
+          <div class="g-name" id="gName">Free Upgrade</div>
+          <div class="g-sub" id="gSub">Any drink, any size</div>
+          <hr class="g-line" />
+          <div class="g-valid" id="gValid">Valid for 7 days</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="r-cta">
+      <button class="btn-main" id="claimBtn" type="button">Claim in App →</button>
+      <button class="btn-ghost" id="tryAgainBtn" type="button">Try again ↺</button>
+    </div>
+  </section>
+
+  <!-- S4: SHARE -->
+  <section class="scr" id="s4">
+    <div class="eyebrow dk"><strong>04</strong>&nbsp;SHARE</div>
+
+    <div class="share-wrap">
+      <h2 class="share-h2">Share<br>your luck.</h2>
+      <p class="share-p">Good luck looks better<br>when we share.</p>
+      <span class="share-tag">#BrewYourLuck</span>
+
+      <div class="fan">
+        <div class="fc">
+          <div class="fc-deer">🦌</div>
+          <div class="fc-ttl">Sweet<br>Signal<br>Detected</div>
+          <div class="fc-sub">Something sweet<br>was waiting.</div>
+          <div class="fc-logo">luckin coffee</div>
+        </div>
+
+        <div class="fc">
+          <div class="fc-deer">🦌</div>
+          <div class="fc-ttl">Blue Luck<br>Unlocked</div>
+          <div class="fc-sub">Something sweet<br>was waiting.</div>
+          <div class="fc-logo">luckin coffee</div>
+        </div>
+
+        <div class="fc">
+          <div class="fc-deer">🦌</div>
+          <div class="fc-ttl">Today's<br>Brew<br>Special</div>
+          <div class="fc-sub">Something sweet<br>was waiting.</div>
+          <div class="fc-logo">luckin coffee</div>
+        </div>
+      </div>
+
+      <div class="socrow">
+        <div class="soc-ic">📷</div>
+        <div class="soc-ic soc-x">𝕏</div>
+        <div class="soc-ic">⬇</div>
+        <span class="soc-more">···</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="./brew.js"></script>
+</body>
+</html>
